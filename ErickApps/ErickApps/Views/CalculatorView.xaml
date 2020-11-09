@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ErickApps.Views.CalculatorView">
+    <ContentView.Content>
+        <Grid BackgroundColor="Black">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Label x:Name="txExpression" HorizontalTextAlignment="End" VerticalTextAlignment="End"
+                   Text="25x58"  Font="MarkerFelt-Thin, 60" TextColor="White"
+                   Grid.Row="0" Grid.Column="0"  Grid.ColumnSpan="4" />
+            <Label x:Name="txResult" HorizontalTextAlignment="End" VerticalTextAlignment="Center"
+                   Text="192910" Font="MarkerFelt-Thin, 60" TextColor="White"
+                   Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4"/>
+            <Button x:Name="BtnSeven" BorderWidth="0"
+                    Text="7" Font="MarkerFelt-Thin, 50" 
+                    Grid.Row="2" Grid.Column="0"/>
+            <Button x:Name="BtnEight" BorderWidth="0"
+                    Text="8" Font="MarkerFelt-Thin, 50" 
+                    Grid.Row="2" Grid.Column="1"/>
+            <Button x:Name="BtnNine" BorderWidth="0"
+                    Text="9" Font="MarkerFelt-Thin, 50" 
+                    Grid.Row="2" Grid.Column="2"/>
+            <Button x:Name="BtnBack" BorderWidth="0"
+                    Text="BACk" Font="MarkerFelt-Thin, 26" 
+                    Grid.Row="2" Grid.Column="3"/>
+            <Button x:Name="BtnFour" BorderWidth="0"
+                    Text="4" Font="MarkerFelt-Thin, 50" 
+                    Grid.Row="3" Grid.Column="0"/>
+            <Button x:Name="BtnFive" BorderWidth="0"
+                    Text="5" Font="MarkerFelt-Thin, 50" 
+                    Grid.Row="3" Grid.Column="1"/>
+            <Button x:Name="BtnSix" BorderWidth="0"
+                    Text="6" Font="MarkerFelt-Thin, 50" 
+                    Grid.Row="3" Grid.Column="2"/>
+            <Button x:Name="BtnDiv" BorderWidth="0"
+                    Text="/" Font="MarkerFelt-Thin, 50" 
+                    Grid.Row="3" 
+                    Grid.Column="3"/>
+            <Button x:Name="BtnOne" BorderWidth="0"
+                    Text="1" Font="MarkerFelt-Thin, 50" 
+                    Grid.Row="4" 
+                    Grid.Column="0"/>
+            <Button x:Name="BtnTwo" BorderWidth="0"
+                    Text="2" Font="MarkerFelt-Thin, 50" 
+                    Grid.Row="4" Grid.Column="1"/>
+            <Button x:Name="BtnThree" BorderWidth="0"
+                    Text="3" Font="MarkerFelt-Thin, 50" 
+                    Grid.Row="4" Grid.Column="2"/>
+            <Button x:Name="BtnTimes" BorderWidth="0"
+                    Text="*" Font="MarkerFelt-Thin, 50" 
+                    Grid.Row="4" Grid.Column="3"/>
+            <Button x:Name="BtnPoint" BorderWidth="0"
+                    Text="." Font="MarkerFelt-Thin, 50" 
+                    Grid.Row="5" Grid.Column="0"/>
+            <Button x:Name="BtnZero" BorderWidth="0"
+                    Text="0" Font="MarkerFelt-Thin, 50" 
+                    Grid.Row="5" Grid.Column="1"/>
+            <Button x:Name="BtnEqual" BorderWidth="0"
+                    Text="=" Font="MarkerFelt-Thin, 50" 
+                    Grid.Row="5" Grid.Column="2"/>
+            <Button x:Name="BtnPlus" BorderWidth="0" 
+                    Text="+" Font="MarkerFelt-Thin, 50" 
+                    Grid.Row="5" Grid.Column="3"/>
+        </Grid>
+    </ContentView.Content>
+</ContentView>

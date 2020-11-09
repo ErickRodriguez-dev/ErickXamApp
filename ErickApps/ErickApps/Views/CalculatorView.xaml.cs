@@ -31,7 +31,7 @@ namespace ErickApps.Views
             BtnNine.Clicked += (sender, e) => txExpression.Text = "9";
             BtnBack.Clicked += (sender, e) => txExpression.Text = "";
             BtnPlus.Clicked += (sender, e) => txExpression.Text = "+";
-            BtnTimes.Clicked += (sender, e) => txExpression.Text = "x";
+            BtnTimes.Clicked += (sender, e) => txExpression.Text = "";
            
         }
     }
